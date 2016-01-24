@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="3cc8dccf-463b-4cc5-b47c-4c65d28bc6b5" name="UMLUseCaseDiagram" linkedPackageId="cd61e518-00c9-4703-8549-aac6510d1f25" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="5a8c24a3-db9f-4b91-bd3f-6dd2149e0acc" name="Особа 1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f53fc36b-6027-4657-9a05-f240fbcfa607" />
+        <targetEnds>
+          <association Id="6719b99e-2d9e-4dcd-a106-1b3109997373" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Задати час" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3f47f6d2-dd51-47e0-bb67-4d6877bfb9d5" LastKnownName="Задати час" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="578aaaa4-c261-42dd-aa62-8dd414537a2c" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8257ea3e-5ba0-46c7-971f-799b42857398" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="32e77b29-0b0e-45f6-bb01-4bef7b845aec" name="Задати час" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="468ebedf-54a8-4ca7-a570-4825c61bb22a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b326b749-e507-47f1-929f-5b55ed1af708" />
+          </association>
+          <association Id="5c235900-37eb-44ae-b183-5d0020353a46" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Створити лінії метро" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7c82386c-f154-4f5d-9a88-5a6478d17b0e" LastKnownName="Створити лінії метро" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="63d8d2da-2655-4a1c-8063-26282b1cbd4a" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c5708a72-ae09-41d8-9f21-7a054715c759" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6be23f1f-099b-40ee-becf-25c5d114ad9f" name="Створити лінії метро" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="47d0e378-c814-473c-a6a1-0c1baf67454f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f6e9a8a7-fc2e-463c-a505-a5358f899dc8" />
+          </association>
+          <association Id="ed6485d1-8c9d-4f4a-9eab-2b6fb85d4c8d" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Видалити лінії метро" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4bee6fe1-9a2a-4045-986b-ad3b7b9c3214" LastKnownName="Видалити лінії метро" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad19f34b-c1e4-4192-adc9-8ae9e24b9b1e" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e0d11de3-1d48-40a6-b096-dfbe085a366a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6ec7769c-e16d-44cd-8988-24a0ad535f0c" name="Видалити лінії метро" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3aef519c-c884-4b95-b19a-435e7c4b83af" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fbe7aba9-7b08-4a0d-b9ec-e9ec20ebf6a2" />
+          </association>
+          <association Id="901c7711-bbf3-4e82-a2fe-f8e9443c6190" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Розташувати лінії метро на карті" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="866473a9-6769-4b19-9264-06f2a3549067" LastKnownName="Розташувати лінії метро на карті" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac4d0440-5af8-4fcf-8d00-7bfd74f00487" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7f0ea259-bd6c-4ec4-8bce-563904988e68" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3b3a5685-3ae4-4fd9-8e6b-81242aee734c" name="Розташувати лінії метро на карті" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d9823ecb-9e7d-467c-b48a-654659bf2b43" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7f446554-8d75-45f3-b2db-73abcf154337" />
+          </association>
+          <association Id="336b1779-c8b9-48dd-8ebe-7f028106af0e" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Створити станції" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b06899bd-a824-4df5-8a1c-2c128811c2ce" LastKnownName="Створити станції" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a951f5e3-cdce-47b0-b89f-24a1e77581e6" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f5b45dfa-14e4-401f-9687-c073c8a76a83" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eaf641fe-99c0-4461-87ac-4b1a984a07c4" name="Створити станції" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="49bc29f5-30db-4e3c-b22c-44f1006a5cb2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fddb3c0d-bfde-457f-b3b6-b16a77f29763" />
+          </association>
+          <association Id="3fa32ea0-91bd-4259-82c8-8020469b89d7" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Видалити станції" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2d921a56-7904-403b-b467-8193b5ccff0a" LastKnownName="Видалити станції" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="62674cbc-5b71-49cc-8d19-58983ed4991b" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="55371bc6-5545-4273-8181-b15bb00b2203" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3944c993-57e6-4b5a-b1a7-34cd159cfcbb" name="Видалити станції" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="77f460f9-4bb2-471b-9839-27b30a1560b9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3bd16134-3824-4126-8062-99763c9d04db" />
+          </association>
+          <association Id="d7905dff-3851-4352-b94f-543c2e1aff23" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Створити потяги" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="490a31c4-5b6a-4981-8c12-418caa820ca6" LastKnownName="Створити потяги" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="744f4b37-1213-49e0-9a4b-afb10195c899" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5b628ae8-9fb6-4499-9f81-ac287bed591d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9c423dd6-0d85-44e6-bbac-3f938eadb5db" name="Створити потяги" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d9a10eca-26f4-4103-9790-3d83514280d8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2e8660a3-9507-4540-b966-99f5a31d0437" />
+          </association>
+          <association Id="bbc4269d-0707-4f6b-af8a-0dc02a109499" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Видалити потяги" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="15939708-0792-4003-a0cb-b9beafa67835" LastKnownName="Видалити потяги" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="77c10426-0042-4581-beb7-7f5a5b8dc8d1" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="11aa27ec-db93-4542-b900-7091be2e4e4e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9908eed0-2503-411c-9cd2-8bdf529d56b0" name="Видалити потяги" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9e73504f-9ffd-4f51-93ff-385920d9cfe8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c842c8c1-2368-450f-9da7-1da25c6e6336" />
+          </association>
+          <association Id="9abdcee5-201f-45d8-a0b9-d5ad49c0f251" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Встановити час відбуття потягу" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b237de28-0a36-4bb1-9d1a-14d48f9be8d7" LastKnownName="Встановити час відбуття потягу" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8293b1d1-b068-472c-9ec2-e8f5d5f1f8af" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="31cf5bcd-7150-4830-a7fc-ffbd28072db5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="28a48b79-890c-4aad-831f-98c0813f36b3" name="Встановити час відбуття потягу" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fbbd6a69-cf61-432c-a56b-bc278f4ec9dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="22ee061f-b685-4356-9e88-e2a895b8b6be" />
+          </association>
+          <association Id="42b7f796-42ef-4716-acbf-a8f88499e7a8" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Встановити  кількість етапів для потяга" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9ead7beb-d5ae-4c9a-b343-e3386a902c23" LastKnownName="Встановити  кількість етапів для потяга" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="27e60c6c-68ed-4da5-946a-d86444cb61c1" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="39237f52-570e-4215-9ef0-0ab5395bd369" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="19a5f2d1-b83e-4237-9ffd-022432ae7af4" name="Встановити  кількість етапів для потяга" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="074ff23a-3896-47ac-bedf-99e69db88394" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="20662ada-f904-496e-977b-5ea90aeaea37" />
+          </association>
+          <association Id="dd1f292c-95d7-4b2d-8696-ce0d20bcc5e4" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Спостерігати за табло на станції" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4c2fae95-581d-482a-b224-06222ed54b48" LastKnownName="Викликати табло станції" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6ee28db3-12a5-4485-b222-53502c98c81b" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="328b5cb5-e542-42c7-a6ba-4515407b0614" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8a35d7aa-941b-4309-be40-339072b6ac4c" name="Спостерігати за табло на станції" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fd9e9f3b-f20f-43d1-9cc6-285196f5b7a6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4d750c60-7a2d-4019-ad86-862f739101bb" />
+          </association>
+          <association Id="6dbf96c7-f80a-42b7-96db-ef8b906a5684" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Встановити рекламу на табло" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4627bcb1-b2fe-44b5-9526-50ed5c87375e" LastKnownName="Встановити рекламу на табло" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b0c9e02d-01b3-4fb6-9830-897503a2f22c" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="793837de-d88a-4611-99e9-c6a9fa930b3f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d5ff06b-0649-4def-975f-a28f62a3cc17" name="Встановити рекламу на табло" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aa56173f-c3c5-41d0-8abe-221313b596ed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="78120f44-cbe5-4d88-9aac-ce14e4f9cbd2" />
+          </association>
+          <association Id="09d07ecd-77b5-4a15-b8b6-49c3372dd4f2" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Подивитися порушення графіку" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="71c4e990-13ea-4cdf-af04-c19d9681b5be" LastKnownName="Подивитися порушення графіку" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d1188ea0-2288-4e26-8974-d5a737782d1d" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0006247e-996d-4a8b-9a91-b3bc3de5366a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d3d9e6e-8c88-4b45-816c-af1798a8b245" name="Подивитися порушення графіку" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f896e5d-38b8-4b50-8100-a89b4ecd0e43" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f9cce3a0-4386-4af8-9bbd-2b928a5f183c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7c82386c-f154-4f5d-9a88-5a6478d17b0e" name="Створити лінії метро" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="80c579ac-dafa-4f79-b079-064d19ab9ccb" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4bee6fe1-9a2a-4045-986b-ad3b7b9c3214" name="Видалити лінії метро" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3ed0a2ee-7750-4d65-a54d-6d6d50ea09aa" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b06899bd-a824-4df5-8a1c-2c128811c2ce" name="Створити станції" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="527e342c-c413-43c7-87f1-eaefe8187871" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2d921a56-7904-403b-b467-8193b5ccff0a" name="Видалити станції" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1f5ab915-60bf-4ed3-acba-52482fe82018" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="490a31c4-5b6a-4981-8c12-418caa820ca6" name="Створити потяги" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fb7bd2c0-5aed-4902-9a66-c3edc0ed1323" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="15939708-0792-4003-a0cb-b9beafa67835" name="Видалити потяги" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0ad6e480-2abf-4092-8315-e8af2a9b6423" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3f47f6d2-dd51-47e0-bb67-4d6877bfb9d5" name="Задати час" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d289a3b8-58b1-415e-8a37-313cd9ba3eb0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b237de28-0a36-4bb1-9d1a-14d48f9be8d7" name="Встановити час відбуття потягу" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3816c8a-80b4-4d60-8b3c-0281566e99be" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9ead7beb-d5ae-4c9a-b343-e3386a902c23" name="Встановити  кількість етапів для потяга" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="abf11959-6daa-4db7-8a47-95c610595ef3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4c2fae95-581d-482a-b224-06222ed54b48" name="Викликати табло станції" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fb4ab1c6-3f32-4c56-a1f4-7dc96bc2b3a6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4627bcb1-b2fe-44b5-9526-50ed5c87375e" name="Встановити рекламу на табло" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="73f6226b-0d3a-4fb6-bdf7-0226074683d2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="71c4e990-13ea-4cdf-af04-c19d9681b5be" name="Подивитися порушення графіку" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="361ad33c-2937-4bdf-a15d-661044577186" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="866473a9-6769-4b19-9264-06f2a3549067" name="Розташувати лінії метро на карті" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3799234e-d658-4d01-8aa9-d5493bddcdc0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="cd61e518-00c9-4703-8549-aac6510d1f25" name="ModelingProject">
+    <elementDefinition Id="02600fe4-5578-4a05-bd98-d41a4b62fa63" />
+    <profileInstances>
+      <packageHasProfileInstances Id="914effc9-b6aa-4404-b7e0-62c8b0d8b5d5">
+        <profileInstance Id="15e64ee3-6274-4c53-bafb-e622a618055f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="90373f57-5e01-4d01-aa36-0deb6ffb9019">
+        <profileInstance Id="b004a623-e5af-4973-85a7-f13632d53b9a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

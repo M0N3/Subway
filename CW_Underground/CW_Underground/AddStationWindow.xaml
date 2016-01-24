@@ -1,0 +1,12 @@
+﻿<Window x:Class="CW_Underground.AddStationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Station" Height="300" Width="300" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" Background="Gainsboro">
+    <Grid>
+        <Label Content="Enter station name:" HorizontalAlignment="Left" Margin="59,42,0,0" VerticalAlignment="Top" FontFamily="Impact" FontSize="20" Foreground="SlateGray"/>
+        <TextBox Name="StationNameTBox" HorizontalAlignment="Left" Height="22" Margin="80,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Name="Add_BT" Content="Add" HorizontalAlignment="Left" Margin="25,196,0,0" VerticalAlignment="Top" Width="120" Click="Add_BT_Click" Height="51" FontFamily="impact" FontSize="20" Foreground="SlateGray"/>
+        <Button Name="Cancel_BT" Content="Cancel" HorizontalAlignment="Left" Margin="145,196,0,0" VerticalAlignment="Top" Width="120" Click="Cancel_BT_Click" Height="51" FontFamily="impact" FontSize="20" Foreground="SlateGray"/>
+
+    </Grid>
+</Window>

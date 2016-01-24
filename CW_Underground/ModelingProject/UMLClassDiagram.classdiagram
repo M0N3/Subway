@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="4cc9aa73-8b1a-4b19-b6b4-5a13d858d297" name="UMLClassDiagram" linkedPackageId="b4d39640-4241-491d-aa1e-e124436de6d1" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="23345001-7d4f-4abf-82e8-b66891fb6aba">
+      <elementDefinition Id="555e0839-1bb1-41ba-b9e7-b164757309be" />
+      <body>- Головне вікно
+- Основні дії
+- Розрахунок часу
+- Додавання \ видалення елементів
+- Розташування елементів
+- Старт анімації</body>
+      <annotatedElements>
+        <classMoniker Id="21c36888-0fef-45ec-b795-dd0ecb731680" LastKnownName="Command Centre" />
+      </annotatedElements>
+    </comment>
+    <comment Id="66514c81-c7a4-49d4-b16c-fe8380a89266">
+      <elementDefinition Id="e9dc0c7f-9f8b-4344-8b6b-2a1157344a89" />
+      <body>- Зберігає список ліній
+- Надає доступ до ліній
+- Додавання лінії</body>
+      <annotatedElements>
+        <classMoniker Id="22274a7d-2910-47bd-ac93-df50e336bcca" LastKnownName="Subway" />
+      </annotatedElements>
+    </comment>
+    <comment Id="91734bda-c359-4b44-9b27-584006ec2bfb">
+      <elementDefinition Id="eee704c0-21c9-45c0-81cf-1771ec2684c6" />
+      <body>- Зберігає списки потягів і станцій
+- Додавання потягів та станцій
+- Надає доступ до потягів та станцій</body>
+      <annotatedElements>
+        <classMoniker Id="574f8557-6e77-43a9-a65f-11702ce42572" LastKnownName="Railway" />
+      </annotatedElements>
+    </comment>
+    <comment Id="adc15eb9-3d2f-416a-a128-db5b19b96930">
+      <elementDefinition Id="1b6cb8c0-0bab-4197-8881-aeab3c3e2b06" />
+      <body>- Об'єкт Станція
+- Містить дані про станцію
+- Містить Табло
+- Надає доступ до порушень графіку потягів</body>
+      <annotatedElements>
+        <classMoniker Id="ebe35e93-8d8a-47d5-9fdd-66ef446e4820" LastKnownName="Station" />
+      </annotatedElements>
+    </comment>
+    <comment Id="4d937828-a83b-4f28-a8fa-94203274d221">
+      <elementDefinition Id="72ff6f58-e5ef-4026-8bd9-a559b859e5f4" />
+      <body>- Об'єкт Потяг
+- Містить дані про потяг
+- Розрахунок часу руху потягу
+- Анімація руху</body>
+      <annotatedElements>
+        <classMoniker Id="e612270f-a3d6-4d1f-89f9-31f35e24af67" LastKnownName="Train" />
+      </annotatedElements>
+    </comment>
+    <comment Id="90ed3dfa-738b-458c-b062-a6145713ecff">
+      <elementDefinition Id="ea4135df-0a1d-4200-aec0-75689a59ea55" />
+      <body>- Містить вікно табло
+- Відображає дані про наявність потягів на станціі
+- Відображає назву станції та поточний час</body>
+      <annotatedElements>
+        <classMoniker Id="c754c54a-3aeb-4bf7-a13c-7dad2c5e8778" LastKnownName="Board" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="21c36888-0fef-45ec-b795-dd0ecb731680" name="Command Centre" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d68f7234-f11e-449d-a912-d9848dad359a" />
+        <targetEnds>
+          <association Id="f3cab1ac-5e6c-4d59-942a-912dd13a558f" isDerived="false" sourceEndRoleName="Command Centre" targetEndRoleName="Subway" isLeaf="false" isAbstract="false">
+            <classMoniker Id="22274a7d-2910-47bd-ac93-df50e336bcca" LastKnownName="Subway" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a987c271-e055-433e-9d88-b8e07359502c" name="Command Centre" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e1fe3cc0-97c3-4d89-a797-7c294acc9b5e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="29ac1d03-8be8-4949-a281-c46a5e23ffcc" name="Subway" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6a24b7ca-2c0b-4677-9dbb-cffe888ceecb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0dbadff3-8884-4939-ac2d-0fcf8c99437f" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="aaa62aee-9db5-448c-a857-ed244e36a82c" name="subway" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e9c2f3eb-7c9f-497e-980f-02c450efc939" />
+          </property>
+          <property Id="a7a16eb1-4bab-411b-bf7c-1643a3a3122e" name="menuCavas" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2c88f9e0-ae0f-4d00-98ca-9e1b77c626a3" />
+          </property>
+          <property Id="9da6da5a-22a8-44b1-a2f8-a77f7e986e98" name="fieldCanvas" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6a959201-db47-4d42-acac-304b9eabd3be" />
+          </property>
+          <property Id="0bb03e30-3cfd-4ba0-be11-890e8a4665bc" name="isAttached" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c195b0c4-6a30-4be9-8fa2-239ec5f064cf" />
+          </property>
+          <property Id="53a640ad-66e1-40e4-98ce-e6cd0725353d" name="attachedElement" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="34f822a3-30e9-4861-875a-11d0bd72baa1" />
+          </property>
+          <property Id="929c773b-cd49-468b-8649-fc06c014fc86" name="clickPoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="30f3ce7b-3676-4763-8ce6-56c3cf755aca" />
+          </property>
+          <property Id="7ba39ac1-52a3-4731-aeea-442afd716ac1" name="timer" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2f1714a6-b81f-4ff2-b97e-3e0f6509ec60" />
+          </property>
+          <property Id="fa90295e-9158-44b3-b995-a3e12e44ab99" name="curerntTime" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="83cdef5e-a2ba-4047-b016-fb378d6e1e9d" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="613699ec-5ac2-41aa-b401-d60f0e8198f9" name="tick" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c3f2827b-6c04-4dd6-a360-ea0a6af6eff1" />
+          </operation>
+          <operation Id="98a62a85-702b-48ef-a4bc-bf4edd2c2370" name="GetViolation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="603838eb-3367-49d7-a3e0-56325d474cf6" />
+          </operation>
+          <operation Id="a9fb55fc-ac89-40d1-8964-d014bf178e04" name="RemoveTrain" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4e58b2a7-ffc7-481c-bb01-dcadc6566527" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3bd360e8-01bb-428c-9218-ac81cca5b022" name="int ind" direction="In" isUnique="false">
+                  <elementDefinition Id="d6a4d0da-37e4-41b6-b857-694ff9349dca" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="cb0f7842-f527-466b-8b68-effa04ea6d08" name="RemoveRailway" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b6fcda95-07c2-45db-a590-9dc81a3f6ba1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1c193c0c-6ae3-4eed-8783-0118abb6d980" name="int ind" direction="In" isUnique="false">
+                  <elementDefinition Id="0e2b8069-d11b-4574-8803-2e71615b15a3" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8cba5d6d-7551-4e8b-9615-bfed5893b54e" name="runBT_Click" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0f7506b7-14df-4a5c-8639-f037697f78a0" />
+          </operation>
+          <operation Id="db16b2fb-cc99-4fb4-9d68-907ac4f4ddf0" name="AddTrain" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2b5845ad-dec2-4cb0-a2b3-315becb3624d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a6f07139-a68a-4278-a7fa-768db492d581" name="int num" direction="In" isUnique="false">
+                  <elementDefinition Id="4f7fff92-402c-428b-8f6d-e4896a3423d0" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c31b0db2-7a79-4643-99d6-fce632075f01" name="AddStation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a474163f-d2fd-440e-a22c-3f39a409545c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="89a542d5-1452-48b8-97fa-c9a87982d58c" name="string name" direction="In" isUnique="false">
+                  <elementDefinition Id="ecabc00b-3bef-4a34-a592-fc8b294c8b2c" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7da8162e-8152-4281-af2a-5dd3d10c8258" name="AddSubwayLine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="57cb5fd5-13d3-465c-87e7-62232c416d9e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2b292e5a-2478-40bc-a8ba-ea7ef828c165" name="string name" direction="In" isUnique="false">
+                  <elementDefinition Id="35eaf54c-eca6-4212-a98c-4e67abd5037c" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="164660fd-01cf-4c70-9568-dcf7d89dc95d" name="SwitchFillBrushes" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cef923bd-7f6a-49c4-ba41-f2359c288a92" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ea2505d9-e7b2-49c8-9ca9-153ae82b9261" name="int ind" direction="In" isUnique="false">
+                  <elementDefinition Id="7f9f5ab2-c8fd-4ebf-b7c4-535564d29781" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="2aefb971-d75e-4bfc-bca4-9aadffcb63d5" name="IntersectionCircleSegment" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2a8c48b1-c41f-4d1f-868d-bf5a8e26196d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="22274a7d-2910-47bd-ac93-df50e336bcca" name="Subway" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="13670cf4-4645-48d9-8592-3b0cafad9801" />
+        <targetEnds>
+          <association Id="5f74dc8f-8635-4086-a028-55adf03b8a6f" isDerived="false" sourceEndRoleName="Subway" targetEndRoleName="Railway" isLeaf="false" isAbstract="false">
+            <classMoniker Id="574f8557-6e77-43a9-a65f-11702ce42572" LastKnownName="Railway" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="06566d53-ed5d-4c61-a56d-264c3bdb16e5" name="Subway" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c96eb7e0-a909-423b-aeaf-5299f52a7273" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="344edddc-84ce-4376-bc64-03f4109a4b3a" name="Railway" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="9cb7a8b2-4ce2-4e4e-bb2d-050739042dd0" name="Lower" value="1">
+                      <elementDefinition Id="eb84cb63-925a-4e14-adcc-ba7a0a8f8e36" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="abcb22a0-8a5e-45cc-8279-2c0e577ee5f4" name="Upper" value="5">
+                      <elementDefinition Id="c30c80d0-3b68-43f3-bd6d-0ef446a81602" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="8715099b-84f8-414c-9638-6d307ef7c1d4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="86efa544-e777-43d2-9d25-5d767da2374d" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="911c859e-39e7-4e66-a574-3fdd024e062a" name="railways" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="083ee862-df45-46e2-bb0e-4c57df4b4d79" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="315a3d1d-46ba-45fc-995f-fa754e6f76dc" name="GetRailways" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bdf17a65-0a53-4395-97ac-50a613352901" />
+          </operation>
+          <operation Id="0efb95d8-eb2a-4ea4-9166-9b2c4eef6218" name="AddRailway" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="03d94dfd-6da5-4637-aa30-cf53181a40fe" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ca6df255-6085-4743-9be4-3be2fea07c22" name="Railway rl" direction="In" isUnique="false">
+                  <elementDefinition Id="e4226bd1-39c9-48cb-8bb6-ae27c1cb418d" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="2939dc72-8913-4ce1-91f3-ba48fc674eb3" name="Subway" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="668a1a09-420a-41ac-9120-0f10c240a1d8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="574f8557-6e77-43a9-a65f-11702ce42572" name="Railway" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="be049409-d6df-406e-baee-2bb4558820a4" />
+        <targetEnds>
+          <association Id="421556bd-8148-4937-bb43-ff28b4d865ce" isDerived="false" sourceEndRoleName="Railway" targetEndRoleName="Station" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ebe35e93-8d8a-47d5-9fdd-66ef446e4820" LastKnownName="Station" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6fae6c8f-e102-4b7f-942e-943277533f09" name="Railway" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fca1a5d7-14ae-4492-99c2-01c74f781149" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="87acce2a-0e68-4752-9a9b-92efedaa0583" name="Station" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="861c50b8-435f-4e80-8d5a-e21362a3c4ea" name="Lower" value="1">
+                      <elementDefinition Id="cd8cb9fc-b117-456e-828a-cd1a5047fab0" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="0ac39fb7-4ba7-4512-9c57-0e291830e788" name="Upper" value="20">
+                      <elementDefinition Id="b245c681-d5a3-4e75-8d95-b44646be497f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="36a8a73f-ee70-4f45-a727-e028ac859be2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="48da42ea-49a7-4c33-96f6-0a64c4693d45" />
+          </association>
+          <association Id="749804f4-cf4f-4e74-857b-b53993399a69" isDerived="false" sourceEndRoleName="Railway" targetEndRoleName="Train" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e612270f-a3d6-4d1f-89f9-31f35e24af67" LastKnownName="Train" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2358568a-02ae-4d41-b95d-a190c5b408a3" name="Railway" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d7327c54-5b16-454d-a052-641937b26114" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0479188c-0b5b-452f-9cc9-c2d68c95e96b" name="Train" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="96f9250c-8bba-4267-96ab-d76d7023be15" name="Lower" value="1">
+                      <elementDefinition Id="87a8273e-e58b-4410-b108-5e3be6afea90" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b7849784-3648-47b9-801f-58f439af5abe" name="Upper" value="10">
+                      <elementDefinition Id="1c961274-12ab-4dad-8d7e-8a3b74d1e43c" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="cbd75687-f0cd-4d11-bb85-c98518aa85c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="157633fe-653a-4951-8b9d-8fb5c108aa55" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="69e66767-d6c9-4c58-bd61-31d72eb479f7" name="railwayName" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c1189cd8-0fc8-4992-8531-fecee26b2ba5" />
+          </property>
+          <property Id="88705d00-41cc-4f93-a122-7d75fb9907da" name="trains" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c89a5ad3-97ab-4fce-ae79-f9c74c6a35f1" />
+          </property>
+          <property Id="3dc42dfe-622b-4c46-aeb5-d03ad109cdb1" name="stations" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7d45c2d5-ce4d-4535-9f4a-79ea95364b75" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="d7b55e5e-fd5a-4d52-a323-1e6bed6a9b5f" name="GetStations" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5c2e8700-49d7-4767-bcb5-a7b070b5166b" />
+          </operation>
+          <operation Id="738d716d-7ef3-4195-98f5-f50f69493176" name="Trains" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c4230200-92a5-429f-855c-e2c5d0499959" />
+          </operation>
+          <operation Id="4c58f2e0-9e85-4185-8a3c-0b57cc7a6c26" name="AddTrain" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b6df17c0-0f02-48ad-9c91-722eddd03220" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4952452a-3c36-41dd-8868-33a102d62151" name="Train t" direction="In" isUnique="false">
+                  <elementDefinition Id="8a2a2468-e352-4dfb-82b5-bc78ca00add1" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9077d23d-490b-4599-af9c-ae3afa1b62fe" name="AddStation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1ed1d7bd-b795-432b-b599-c35856df9e9a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="29925834-c3cf-42d9-b0af-38dc021bfe10" name="Station st" direction="In" isUnique="false">
+                  <elementDefinition Id="a91ed84d-68a6-4dd0-b930-a710fba963c4" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ebe35e93-8d8a-47d5-9fdd-66ef446e4820" name="Station" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7b9523b5-693b-4f6c-a15e-e3645d24348f" />
+        <targetEnds>
+          <association Id="5a24680b-fca9-4aef-a9a2-2627f1b27cb5" isDerived="false" sourceEndRoleName="Station" targetEndRoleName="Board" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c754c54a-3aeb-4bf7-a13c-7dad2c5e8778" LastKnownName="Board" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6fb65d67-3b22-40e4-b1c6-e95d52d9e20b" name="Station" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="16a40db2-de64-4b42-86dd-8c1534d1c4bf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0e311b26-dbfa-4e2e-9321-d51bf8c4ba09" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8a216b8b-bb90-4da2-a191-69ae8f32ed14" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="750c1b51-91f1-4a14-aa38-0fe16f701498" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="0f41d771-cbf7-4b5a-a4d2-22fc5319e668" name="stationName" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5fe8a874-fa8d-460b-8e58-2fdc5a64786c" />
+          </property>
+          <property Id="380bb673-f090-4785-a45b-2b1fede4f403" name="coordinate" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e87ed0a3-db54-4a1f-a831-fbb18412a66d" />
+          </property>
+          <property Id="2859ec85-0c50-4266-a1e7-a27e6e6297de" name="ellipsePath" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fc23b2c0-0e5a-40c0-93f5-fa30c00d7622" />
+          </property>
+          <property Id="5d5cc00c-cf82-4662-a939-3e49ef41d199" name="startLinePath" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4528604b-85b9-45f2-8e37-3e71e02d6859" />
+          </property>
+          <property Id="78467b23-4f17-47c3-aae0-e3222a5a066b" name="stationBoard" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="079a5bce-fd8e-452a-afc1-5d59458841ff" />
+          </property>
+          <property Id="e61c58d9-b39d-4e20-828e-263381af3583" name="lineNumber" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d225dab1-ce40-4af4-badd-c792dcb23459" />
+          </property>
+          <property Id="2ee13750-a058-499f-9acd-102610633df3" name="number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b33f1478-dbea-4b0f-99a2-54a3c92370eb" />
+          </property>
+          <property Id="5884b7e4-a0f8-4327-8a18-cfb463207a25" name="violations" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="254c4b6e-d883-4f1f-ad9e-6fecd5b7baa9" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="c0283161-18e1-4e0f-bd82-804df3aaeba6" name="GetEllipsePath" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="18cc4c2a-41c4-4191-bc1b-d541333504ba" />
+          </operation>
+          <operation Id="ffc547b5-db97-4fed-bec1-5da14742550c" name="GetViolations" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e09dfdc5-a6bc-4ab4-b45b-ce964108172d" />
+          </operation>
+          <operation Id="0cbd6f29-dd19-4f6c-a391-079058641b85" name="AddViolations" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4ff5e8b3-1a3a-40e8-8979-2393d52f046a" />
+          </operation>
+          <operation Id="472b47bb-a071-47d0-bdf8-654e83178006" name="Board" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="632b1e45-ed6b-478d-8533-fd1206baa52f" />
+          </operation>
+          <operation Id="4cd35e7f-6d5d-4a89-afab-c7ef54383cdd" name="Coordinate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="aa8b863c-7234-4e6c-b77c-937ea446267a" />
+          </operation>
+          <operation Id="d635782c-37eb-4440-a736-b7a5664b706f" name="StartLinePath" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9aa062c7-da91-411d-8caa-8ec0974603bf" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e612270f-a3d6-4d1f-89f9-31f35e24af67" name="Train" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="38fef1d4-a9a1-4040-8a90-1130e86b8ee1" />
+        <ownedAttributesInternal>
+          <property Id="ed007da2-9e36-477f-b54c-eb0adbfcab2b" name="departureTime" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8366e4d3-2a5c-47be-a2eb-0d64b8b0cbca" />
+          </property>
+          <property Id="dfd1458f-bd27-424a-8e62-866c3215f493" name="linenumber" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3f5124c9-cd1b-4f84-9c22-e0deb9a38404" />
+          </property>
+          <property Id="61e1ba49-7ead-43cd-be2e-889459ac3816" name="trainPath" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b20f4edd-3b4e-4bc0-b3ab-6533f568da0f" />
+          </property>
+          <property Id="865e7895-68d0-4c38-ab93-04b56af5fa93" name="Back" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8ace3861-42bd-4717-a037-64144a6cfdcb" />
+          </property>
+          <property Id="c32a53c4-d79d-4a65-bff5-6fd9c3e577f9" name="travelTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="94718de7-dbcd-4f4c-9756-110cdc97d331" />
+          </property>
+          <property Id="bb2b0e94-a4e3-4867-b815-b0626529c777" name="numOfpassage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4031e895-b47f-4dc6-8b65-8707beb846b7" />
+          </property>
+          <property Id="196fa0b1-9906-4753-b01c-f4147b28f9ab" name="timeOnStation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="29a5c004-c6fc-49e0-ad61-112005eabeb9" />
+          </property>
+          <property Id="2f6e41bc-d280-4a28-b7a2-974401de903e" name="Start" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="976b81ad-40be-4e3a-bc27-31b66fa197e2" />
+          </property>
+          <property Id="d1ae4bcd-38a4-4437-9634-725bc33f15c1" name="id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e1a7f4bc-0577-4d12-bdc1-eb98c4c7030a" />
+          </property>
+          <property Id="f64e8693-970f-43ec-997b-72353b6bca33" name="onStation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dc0ae5a6-c124-4fca-9b2d-c7a0d185d0cf" />
+          </property>
+          <property Id="3fddf9dc-54e6-49aa-b28a-d9a618e1fa59" name="leftStation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fd3ca74b-5f98-4aff-9579-4e85aa9b9084" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0b4d8f00-f4e0-44fd-b4c8-a5cdfaa2886a" name="Animate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="77a7b2be-1c8c-4899-8b18-d8de124f8cb2" />
+          </operation>
+          <operation Id="f93f503f-9c48-47d5-bfaa-d9dce66bd506" name="Stop" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="102d1a39-8ea4-48b1-ad55-58388c8e6b18" />
+          </operation>
+          <operation Id="96fa86ec-9025-4b17-9860-4386f548b1f9" name="CalcTime" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bd718f11-3e8e-4500-8465-975fa62ffa23" />
+          </operation>
+          <operation Id="ba7871ff-da13-41a0-bb2e-35b1d1816712" name="SetCurrId" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c32453e0-33d0-4e26-8330-a1bb432c1fd5" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c754c54a-3aeb-4bf7-a13c-7dad2c5e8778" name="Board" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="def52c44-7927-4073-912a-ab987aad0a0d" />
+        <ownedAttributesInternal>
+          <property Id="6b215f0d-857d-474c-97fa-b3fd5230d9c1" name="boardWindow" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d62670f4-6ed1-4a05-823f-be00488ee74c" />
+          </property>
+          <property Id="642f3a40-8ed0-4d4e-af17-0e01c55b01e3" name="currTime" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="83d9bc60-c398-4ddc-9f8b-af86fe556c8c" />
+          </property>
+          <property Id="3c9f9114-5163-4f8b-b2e5-112f25bcf6ea" name="timer" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="89a8b3e6-cac8-4334-8216-1f740219db02" />
+          </property>
+          <property Id="b976411e-1e0b-46b1-b8c2-16570ff3caff" name="name" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f954f944-49b3-4053-a053-d25159778cd8" />
+          </property>
+          <property Id="e9614907-5da4-4f64-9881-a61b9d0f0a2d" name="number" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ca4cf1a5-5430-4698-af85-51ab6d218d7d" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="9b7d1136-0761-4abc-bbc9-f21d3a470b5a" name="tick" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b3d617ca-3939-4f29-89b1-e9a80f4af174" />
+          </operation>
+          <operation Id="de93ff96-f686-4984-b75a-b232b509b53c" name="Start" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cf24e860-5753-4f15-8c80-5a73972176d2" />
+          </operation>
+          <operation Id="a21b1e6b-4ba7-42ad-ba67-3da58676029a" name="Stop" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f2570b4a-20dc-4696-90f9-a706aa66a41c" />
+          </operation>
+          <operation Id="f17e2285-655f-40d1-a685-495eade83c9a" name="TrainLeft" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d873e1a2-5af8-4aba-a3ab-d2326df3d27f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a6e6fa21-b9be-400e-af41-2bd1f267e241" name="Bool Back" direction="In" isUnique="false">
+                  <elementDefinition Id="40a9c527-1999-4d86-b39d-eedd75e4cb4f" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f12910f1-c15b-49d9-9a3f-3320221b52e7" name="TrainOnStation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5bcdc548-9e2e-4fa7-89f2-5d804eb2ca6a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="47e79e21-8370-4983-ad47-bd7553b7027d" name="int num" direction="In" isUnique="false">
+                  <elementDefinition Id="9801015e-fe38-48a0-bbd4-1cf5a033589f" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="b4d39640-4241-491d-aa1e-e124436de6d1" name="ModelingProject">
+    <elementDefinition Id="02600fe4-5578-4a05-bd98-d41a4b62fa63" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a0ee1329-75b7-4c86-a1da-5a7bb6ea5f97">
+        <profileInstance Id="0b0cb335-0674-40b1-a4b6-18944faf2a86" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d59ec020-72d2-4e67-91da-24022320b19b">
+        <profileInstance Id="eada1713-c885-42fa-acf9-15b67727ceae" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

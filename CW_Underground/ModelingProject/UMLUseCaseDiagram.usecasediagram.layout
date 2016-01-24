@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram">
+  <useCaseModelRootMoniker Id="3cc8dccf-463b-4cc5-b47c-4c65d28bc6b5" />
+  <nestedChildShapes>
+    <actorShape Id="fbc1594f-0494-48d5-a988-a3638cadec50" absoluteBounds="3.125, 1.875, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="5a8c24a3-db9f-4b91-bd3f-6dd2149e0acc" LastKnownName="Особа 1" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="305cb363-7139-4e88-b92d-425c7716b63e" absoluteBounds="1, 3.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="7c82386c-f154-4f5d-9a88-5a6478d17b0e" LastKnownName="Створити лінії метро" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.125 : 2.325); (1.76499947000159 : 3.41300042399873)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="5c235900-37eb-44ae-b183-5d0020353a46" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="fbc1594f-0494-48d5-a988-a3638cadec50" />
+        <useCaseShapeMoniker Id="305cb363-7139-4e88-b92d-425c7716b63e" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="21e8e8aa-1408-4160-942a-ae30878e3fcb" absoluteBounds="0.75, 2.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="4bee6fe1-9a2a-4045-986b-ad3b7b9c3214" LastKnownName="Видалити лінії метро" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.125 : 2.19852941176471); (1.68096710757888 : 2.62324496835915)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="ed6485d1-8c9d-4f4a-9eab-2b6fb85d4c8d" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="fbc1594f-0494-48d5-a988-a3638cadec50" />
+        <useCaseShapeMoniker Id="21e8e8aa-1408-4160-942a-ae30878e3fcb" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="7baa20f2-973f-44b4-bf22-f4396d09bbfe" absoluteBounds="1.375, 1, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="b06899bd-a824-4df5-8a1c-2c128811c2ce" LastKnownName="Створити станції" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.125 : 1.97916666666667); (2.20039568672798 : 1.43981415059132)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="336b1779-c8b9-48dd-8ebe-7f028106af0e" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="fbc1594f-0494-48d5-a988-a3638cadec50" />
+        <useCaseShapeMoniker Id="7baa20f2-973f-44b4-bf22-f4396d09bbfe" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="6febb8d1-80a0-4e8b-9f76-1e9b5f207b10" absoluteBounds="2.375, 0.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="2d921a56-7904-403b-b467-8193b5ccff0a" LastKnownName="Видалити станції" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.26388888888889 : 1.875); (2.98346522890933 : 1.24404676504599)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="3fa32ea0-91bd-4259-82c8-8020469b89d7" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="fbc1594f-0494-48d5-a988-a3638cadec50" />
+        <useCaseShapeMoniker Id="6febb8d1-80a0-4e8b-9f76-1e9b5f207b10" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="2ef5d207-204b-49a9-be74-392e2a54146d" absoluteBounds="3.5, 0.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="490a31c4-5b6a-4981-8c12-418caa820ca6" LastKnownName="Створити потяги" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.51388888888889 : 1.875); (3.86617806810695 : 1.24087947740749)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="d7905dff-3851-4352-b94f-543c2e1aff23" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="fbc1594f-0494-48d5-a988-a3638cadec50" />
+        <useCaseShapeMoniker Id="2ef5d207-204b-49a9-be74-392e2a54146d" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="88df68af-dc46-46b4-9e4d-92f671b879f0" absoluteBounds="4.625, 0.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="15939708-0792-4003-a0cb-b9beafa67835" LastKnownName="Видалити потяги" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.625 : 1.96428571428571); (4.81802969324254 : 1.19733805434408)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="bbc4269d-0707-4f6b-af8a-0dc02a109499" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="fbc1594f-0494-48d5-a988-a3638cadec50" />
+        <useCaseShapeMoniker Id="88df68af-dc46-46b4-9e4d-92f671b879f0" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="9bd07885-c6d8-4829-b346-016bc83b9834" absoluteBounds="1.875, 3.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="3f47f6d2-dd51-47e0-bb67-4d6877bfb9d5" LastKnownName="Задати час" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.25 : 2.375); (2.49626781251817 : 3.88246437496367)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="6719b99e-2d9e-4dcd-a106-1b3109997373" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="fbc1594f-0494-48d5-a988-a3638cadec50" />
+        <useCaseShapeMoniker Id="9bd07885-c6d8-4829-b346-016bc83b9834" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="c72ce2e2-a68a-4c4d-9e87-298251019741" absoluteBounds="5.375, 1.125, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="b237de28-0a36-4bb1-9d1a-14d48f9be8d7" LastKnownName="Встановити час відбуття потягу" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.625 : 2.0625); (5.40065835097474 : 1.61858541225631)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="9abdcee5-201f-45d8-a0b9-d5ad49c0f251" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="fbc1594f-0494-48d5-a988-a3638cadec50" />
+        <useCaseShapeMoniker Id="c72ce2e2-a68a-4c4d-9e87-298251019741" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="f528d85e-2efa-4482-829b-63e2b1efa59c" absoluteBounds="5.625, 2, 1.25, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="9ead7beb-d5ae-4c9a-b343-e3386a902c23" LastKnownName="Встановити  кількість етапів для потяга" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.625 : 2.14673913043478); (5.63146212562478 : 2.32121409788042)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="42b7f796-42ef-4716-acbf-a8f88499e7a8" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="fbc1594f-0494-48d5-a988-a3638cadec50" />
+        <useCaseShapeMoniker Id="f528d85e-2efa-4482-829b-63e2b1efa59c" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="6b25f6af-1c31-4a7e-ab40-5174a4972562" absoluteBounds="5, 2.875, 1.25, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="4c2fae95-581d-482a-b224-06222ed54b48" LastKnownName="Викликати табло станції" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.625 : 2.25); (5.14486170025164 : 3.00993085012582)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="dd1f292c-95d7-4b2d-8696-ce0d20bcc5e4" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="fbc1594f-0494-48d5-a988-a3638cadec50" />
+        <useCaseShapeMoniker Id="6b25f6af-1c31-4a7e-ab40-5174a4972562" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="2dee2796-59a5-47c8-b44d-8c3aa2af9f51" absoluteBounds="4.125, 3.5, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="4627bcb1-b2fe-44b5-9526-50ed5c87375e" LastKnownName="Встановити рекламу на табло" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.55357142857143 : 2.375); (4.38888929374229 : 3.54444501123921)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="6dbf96c7-f80a-42b7-96db-ef8b906a5684" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="fbc1594f-0494-48d5-a988-a3638cadec50" />
+        <useCaseShapeMoniker Id="2dee2796-59a5-47c8-b44d-8c3aa2af9f51" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="55d25833-014d-42a0-b53e-496512e99ba9" absoluteBounds="3, 3.75, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="71c4e990-13ea-4cdf-af04-c19d9681b5be" LastKnownName="Подивитися порушення графіку" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.390625 : 2.375); (3.47658820685071 : 3.75041130961131)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="09d07ecd-77b5-4a15-b8b6-49c3372dd4f2" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="fbc1594f-0494-48d5-a988-a3638cadec50" />
+        <useCaseShapeMoniker Id="55d25833-014d-42a0-b53e-496512e99ba9" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="c9c79a5e-df2b-4290-85fe-09cc57113526" absoluteBounds="0.625, 1.5, 1.25, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="866473a9-6769-4b19-9264-06f2a3549067" LastKnownName="Розташувати лінії метро на карті" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.125 : 2.09558823529412); (1.86332109354822 : 1.94715542277038)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="901c7711-bbf3-4e82-a2fe-f8e9443c6190" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="fbc1594f-0494-48d5-a988-a3638cadec50" />
+        <useCaseShapeMoniker Id="c9c79a5e-df2b-4290-85fe-09cc57113526" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

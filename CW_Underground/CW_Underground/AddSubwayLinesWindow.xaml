@@ -1,0 +1,13 @@
+﻿<Window x:Class="CW_Underground.AddSubwayLinesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Railway" Height="300" Width="300" WindowStartupLocation="CenterOwner" Background="Gainsboro" ResizeMode="NoResize">
+    <Grid>
+        <Button Name="Add_BT" Content="Add" HorizontalAlignment="Left" Margin="26,190,0,0" VerticalAlignment="Top" Width="119" Click="Add_BT_Click" FontFamily="Impact" FontSize="20" Foreground="SlateGray" Height="49"/>
+        <Button Name="Cancel_BT" Content="Cancel" HorizontalAlignment="Left" Margin="145,190,0,0" VerticalAlignment="Top" Width="120" Click="Cancel_BT_Click" FontFamily="Impact" FontSize="20" Foreground="SlateGray" Height="49"/>
+        <Label Content="Enter Railway name:" HorizontalAlignment="Left" Margin="57,42,0,0" VerticalAlignment="Top" FontFamily="Impact" FontSize="20" Foreground="SlateGray"/>
+        <TextBox Name="SubwayLinesNameTBox" HorizontalAlignment="Left" Height="23" Margin="82,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Name="ResultLB" Content="" HorizontalAlignment="Left" Margin="113,151,0,0" VerticalAlignment="Top" FontFamily="Impact" FontSize="20" Foreground="Black"/>
+
+    </Grid>
+</Window>

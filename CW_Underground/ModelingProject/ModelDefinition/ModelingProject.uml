@@ -1,0 +1,1840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="02600fe4-5578-4a05-bd98-d41a4b62fa63"
+  name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="555e0839-1bb1-41ba-b9e7-b164757309be">
+      <body>- Головне вікно
+- Основні дії
+- Розрахунок часу
+- Додавання \ видалення елементів
+- Розташування елементів
+- Старт анімації</body>
+      <annotatedElements>
+        <classMoniker
+          Id="d68f7234-f11e-449d-a912-d9848dad359a"
+          LastKnownName="Command Centre"
+          LastKnownLocation="ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="e9dc0c7f-9f8b-4344-8b6b-2a1157344a89">
+      <body>- Зберігає список ліній
+- Надає доступ до ліній
+- Додавання лінії</body>
+      <annotatedElements>
+        <classMoniker
+          Id="13670cf4-4645-48d9-8592-3b0cafad9801"
+          LastKnownName="Subway"
+          LastKnownLocation="ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="eee704c0-21c9-45c0-81cf-1771ec2684c6">
+      <body>- Зберігає списки потягів і станцій
+- Додавання потягів та станцій
+- Надає доступ до потягів та станцій</body>
+      <annotatedElements>
+        <classMoniker
+          Id="be049409-d6df-406e-baee-2bb4558820a4"
+          LastKnownName="Railway"
+          LastKnownLocation="ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="1b6cb8c0-0bab-4197-8881-aeab3c3e2b06">
+      <body>- Об'єкт Станція
+- Містить дані про станцію
+- Містить Табло
+- Надає доступ до порушень графіку потягів</body>
+      <annotatedElements>
+        <classMoniker
+          Id="7b9523b5-693b-4f6c-a15e-e3645d24348f"
+          LastKnownName="Station"
+          LastKnownLocation="ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="72ff6f58-e5ef-4026-8bd9-a559b859e5f4">
+      <body>- Об'єкт Потяг
+- Містить дані про потяг
+- Розрахунок часу руху потягу
+- Анімація руху</body>
+      <annotatedElements>
+        <classMoniker
+          Id="38fef1d4-a9a1-4040-8a90-1130e86b8ee1"
+          LastKnownName="Train"
+          LastKnownLocation="ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="ea4135df-0a1d-4200-aec0-75689a59ea55">
+      <body>- Містить вікно табло
+- Відображає дані про наявність потягів на станціі
+- Відображає назву станції та поточний час</body>
+      <annotatedElements>
+        <classMoniker
+          Id="def52c44-7927-4073-912a-ab987aad0a0d"
+          LastKnownName="Board"
+          LastKnownLocation="ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="d68f7234-f11e-449d-a912-d9848dad359a"
+        name="Command Centre"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="0dbadff3-8884-4939-ac2d-0fcf8c99437f"
+            isDerived="false"
+            sourceEndRoleName="Command Centre"
+            targetEndRoleName="Subway"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="13670cf4-4645-48d9-8592-3b0cafad9801"
+              LastKnownName="Subway"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e1fe3cc0-97c3-4d89-a797-7c294acc9b5e"
+                  name="Command Centre"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6a24b7ca-2c0b-4677-9dbb-cffe888ceecb"
+                  name="Subway"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="e9c2f3eb-7c9f-497e-980f-02c450efc939"
+            name="subway"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2c88f9e0-ae0f-4d00-98ca-9e1b77c626a3"
+            name="menuCavas"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6a959201-db47-4d42-acac-304b9eabd3be"
+            name="fieldCanvas"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c195b0c4-6a30-4be9-8fa2-239ec5f064cf"
+            name="isAttached"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="34f822a3-30e9-4861-875a-11d0bd72baa1"
+            name="attachedElement"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="30f3ce7b-3676-4763-8ce6-56c3cf755aca"
+            name="clickPoint"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2f1714a6-b81f-4ff2-b97e-3e0f6509ec60"
+            name="timer"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="83cdef5e-a2ba-4047-b016-fb378d6e1e9d"
+            name="curerntTime"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c3f2827b-6c04-4dd6-a360-ea0a6af6eff1"
+            name="tick"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="603838eb-3367-49d7-a3e0-56325d474cf6"
+            name="GetViolation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4e58b2a7-ffc7-481c-bb01-dcadc6566527"
+            name="RemoveTrain"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d6a4d0da-37e4-41b6-b857-694ff9349dca"
+                  name="int ind"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b6fcda95-07c2-45db-a590-9dc81a3f6ba1"
+            name="RemoveRailway"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0e2b8069-d11b-4574-8803-2e71615b15a3"
+                  name="int ind"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0f7506b7-14df-4a5c-8639-f037697f78a0"
+            name="runBT_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2b5845ad-dec2-4cb0-a2b3-315becb3624d"
+            name="AddTrain"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4f7fff92-402c-428b-8f6d-e4896a3423d0"
+                  name="int num"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a474163f-d2fd-440e-a22c-3f39a409545c"
+            name="AddStation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ecabc00b-3bef-4a34-a592-fc8b294c8b2c"
+                  name="string name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="57cb5fd5-13d3-465c-87e7-62232c416d9e"
+            name="AddSubwayLine"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="35eaf54c-eca6-4212-a98c-4e67abd5037c"
+                  name="string name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cef923bd-7f6a-49c4-ba41-f2359c288a92"
+            name="SwitchFillBrushes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7f9f5ab2-c8fd-4ebf-b7c4-535564d29781"
+                  name="int ind"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2a8c48b1-c41f-4d1f-868d-bf5a8e26196d"
+            name="IntersectionCircleSegment"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="13670cf4-4645-48d9-8592-3b0cafad9801"
+        name="Subway"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="86efa544-e777-43d2-9d25-5d767da2374d"
+            isDerived="false"
+            sourceEndRoleName="Subway"
+            targetEndRoleName="Railway"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="be049409-d6df-406e-baee-2bb4558820a4"
+              LastKnownName="Railway"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c96eb7e0-a909-423b-aeaf-5299f52a7273"
+                  name="Subway"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8715099b-84f8-414c-9638-6d307ef7c1d4"
+                  name="Railway"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="eb84cb63-925a-4e14-adcc-ba7a0a8f8e36"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c30c80d0-3b68-43f3-bd6d-0ef446a81602"
+                      name="Upper"
+                      value="5" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="083ee862-df45-46e2-bb0e-4c57df4b4d79"
+            name="railways"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bdf17a65-0a53-4395-97ac-50a613352901"
+            name="GetRailways"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="03d94dfd-6da5-4637-aa30-cf53181a40fe"
+            name="AddRailway"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e4226bd1-39c9-48cb-8bb6-ae27c1cb418d"
+                  name="Railway rl"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="668a1a09-420a-41ac-9120-0f10c240a1d8"
+            name="Subway"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="be049409-d6df-406e-baee-2bb4558820a4"
+        name="Railway"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="48da42ea-49a7-4c33-96f6-0a64c4693d45"
+            isDerived="false"
+            sourceEndRoleName="Railway"
+            targetEndRoleName="Station"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7b9523b5-693b-4f6c-a15e-e3645d24348f"
+              LastKnownName="Station"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fca1a5d7-14ae-4492-99c2-01c74f781149"
+                  name="Railway"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="36a8a73f-ee70-4f45-a727-e028ac859be2"
+                  name="Station"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cd8cb9fc-b117-456e-828a-cd1a5047fab0"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b245c681-d5a3-4e75-8d95-b44646be497f"
+                      name="Upper"
+                      value="20" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="157633fe-653a-4951-8b9d-8fb5c108aa55"
+            isDerived="false"
+            sourceEndRoleName="Railway"
+            targetEndRoleName="Train"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="38fef1d4-a9a1-4040-8a90-1130e86b8ee1"
+              LastKnownName="Train"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d7327c54-5b16-454d-a052-641937b26114"
+                  name="Railway"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cbd75687-f0cd-4d11-bb85-c98518aa85c5"
+                  name="Train"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="87a8273e-e58b-4410-b108-5e3be6afea90"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1c961274-12ab-4dad-8d7e-8a3b74d1e43c"
+                      name="Upper"
+                      value="10" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="c1189cd8-0fc8-4992-8531-fecee26b2ba5"
+            name="railwayName"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c89a5ad3-97ab-4fce-ae79-f9c74c6a35f1"
+            name="trains"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7d45c2d5-ce4d-4535-9f4a-79ea95364b75"
+            name="stations"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5c2e8700-49d7-4767-bcb5-a7b070b5166b"
+            name="GetStations"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c4230200-92a5-429f-855c-e2c5d0499959"
+            name="Trains"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b6df17c0-0f02-48ad-9c91-722eddd03220"
+            name="AddTrain"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a2a2468-e352-4dfb-82b5-bc78ca00add1"
+                  name="Train t"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1ed1d7bd-b795-432b-b599-c35856df9e9a"
+            name="AddStation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a91ed84d-68a6-4dd0-b930-a710fba963c4"
+                  name="Station st"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7b9523b5-693b-4f6c-a15e-e3645d24348f"
+        name="Station"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="750c1b51-91f1-4a14-aa38-0fe16f701498"
+            isDerived="false"
+            sourceEndRoleName="Station"
+            targetEndRoleName="Board"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="def52c44-7927-4073-912a-ab987aad0a0d"
+              LastKnownName="Board"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16a40db2-de64-4b42-86dd-8c1534d1c4bf"
+                  name="Station"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8a216b8b-bb90-4da2-a191-69ae8f32ed14"
+                  name="Board"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="5fe8a874-fa8d-460b-8e58-2fdc5a64786c"
+            name="stationName"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e87ed0a3-db54-4a1f-a831-fbb18412a66d"
+            name="coordinate"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fc23b2c0-0e5a-40c0-93f5-fa30c00d7622"
+            name="ellipsePath"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4528604b-85b9-45f2-8e37-3e71e02d6859"
+            name="startLinePath"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="079a5bce-fd8e-452a-afc1-5d59458841ff"
+            name="stationBoard"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d225dab1-ce40-4af4-badd-c792dcb23459"
+            name="lineNumber"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b33f1478-dbea-4b0f-99a2-54a3c92370eb"
+            name="number"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="254c4b6e-d883-4f1f-ad9e-6fecd5b7baa9"
+            name="violations"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="18cc4c2a-41c4-4191-bc1b-d541333504ba"
+            name="GetEllipsePath"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e09dfdc5-a6bc-4ab4-b45b-ce964108172d"
+            name="GetViolations"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4ff5e8b3-1a3a-40e8-8979-2393d52f046a"
+            name="AddViolations"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="632b1e45-ed6b-478d-8533-fd1206baa52f"
+            name="Board"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="aa8b863c-7234-4e6c-b77c-937ea446267a"
+            name="Coordinate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9aa062c7-da91-411d-8caa-8ec0974603bf"
+            name="StartLinePath"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="38fef1d4-a9a1-4040-8a90-1130e86b8ee1"
+        name="Train"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="8366e4d3-2a5c-47be-a2eb-0d64b8b0cbca"
+            name="departureTime"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3f5124c9-cd1b-4f84-9c22-e0deb9a38404"
+            name="linenumber"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b20f4edd-3b4e-4bc0-b3ab-6533f568da0f"
+            name="trainPath"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8ace3861-42bd-4717-a037-64144a6cfdcb"
+            name="Back"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="94718de7-dbcd-4f4c-9756-110cdc97d331"
+            name="travelTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4031e895-b47f-4dc6-8b65-8707beb846b7"
+            name="numOfpassage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="29a5c004-c6fc-49e0-ad61-112005eabeb9"
+            name="timeOnStation"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="976b81ad-40be-4e3a-bc27-31b66fa197e2"
+            name="Start"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e1a7f4bc-0577-4d12-bdc1-eb98c4c7030a"
+            name="id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="dc0ae5a6-c124-4fca-9b2d-c7a0d185d0cf"
+            name="onStation"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fd3ca74b-5f98-4aff-9579-4e85aa9b9084"
+            name="leftStation"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="77a7b2be-1c8c-4899-8b18-d8de124f8cb2"
+            name="Animate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="102d1a39-8ea4-48b1-ad55-58388c8e6b18"
+            name="Stop"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bd718f11-3e8e-4500-8465-975fa62ffa23"
+            name="CalcTime"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c32453e0-33d0-4e26-8330-a1bb432c1fd5"
+            name="SetCurrId"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="def52c44-7927-4073-912a-ab987aad0a0d"
+        name="Board"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="d62670f4-6ed1-4a05-823f-be00488ee74c"
+            name="boardWindow"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="83d9bc60-c398-4ddc-9f8b-af86fe556c8c"
+            name="currTime"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="89a8b3e6-cac8-4334-8216-1f740219db02"
+            name="timer"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f954f944-49b3-4053-a053-d25159778cd8"
+            name="name"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ca4cf1a5-5430-4698-af85-51ab6d218d7d"
+            name="number"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b3d617ca-3939-4f29-89b1-e9a80f4af174"
+            name="tick"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="cf24e860-5753-4f15-8c80-5a73972176d2"
+            name="Start"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f2570b4a-20dc-4696-90f9-a706aa66a41c"
+            name="Stop"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d873e1a2-5af8-4aba-a3ab-d2326df3d27f"
+            name="TrainLeft"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="40a9c527-1999-4d86-b39d-eedd75e4cb4f"
+                  name="Bool Back"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5bcdc548-9e2e-4fa7-89f2-5d804eb2ca6a"
+            name="TrainOnStation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9801015e-fe38-48a0-bbd4-1cf5a033589f"
+                  name="int num"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f53fc36b-6027-4657-9a05-f240fbcfa607"
+        name="Особа 1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b326b749-e507-47f1-929f-5b55ed1af708"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="Задати час"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d289a3b8-58b1-415e-8a37-313cd9ba3eb0"
+              LastKnownName="Задати час"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8257ea3e-5ba0-46c7-971f-799b42857398"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="468ebedf-54a8-4ca7-a570-4825c61bb22a"
+                  name="Задати час"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f6e9a8a7-fc2e-463c-a505-a5358f899dc8"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="Створити лінії метро"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="80c579ac-dafa-4f79-b079-064d19ab9ccb"
+              LastKnownName="Створити лінії метро"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c5708a72-ae09-41d8-9f21-7a054715c759"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="47d0e378-c814-473c-a6a1-0c1baf67454f"
+                  name="Створити лінії метро"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fbe7aba9-7b08-4a0d-b9ec-e9ec20ebf6a2"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="Видалити лінії метро"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3ed0a2ee-7750-4d65-a54d-6d6d50ea09aa"
+              LastKnownName="Видалити лінії метро"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e0d11de3-1d48-40a6-b096-dfbe085a366a"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3aef519c-c884-4b95-b19a-435e7c4b83af"
+                  name="Видалити лінії метро"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7f446554-8d75-45f3-b2db-73abcf154337"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="Розташувати лінії метро на карті"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3799234e-d658-4d01-8aa9-d5493bddcdc0"
+              LastKnownName="Розташувати лінії метро на карті"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7f0ea259-bd6c-4ec4-8bce-563904988e68"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d9823ecb-9e7d-467c-b48a-654659bf2b43"
+                  name="Розташувати лінії метро на карті"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fddb3c0d-bfde-457f-b3b6-b16a77f29763"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="Створити станції"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="527e342c-c413-43c7-87f1-eaefe8187871"
+              LastKnownName="Створити станції"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f5b45dfa-14e4-401f-9687-c073c8a76a83"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="49bc29f5-30db-4e3c-b22c-44f1006a5cb2"
+                  name="Створити станції"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3bd16134-3824-4126-8062-99763c9d04db"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="Видалити станції"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1f5ab915-60bf-4ed3-acba-52482fe82018"
+              LastKnownName="Видалити станції"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="55371bc6-5545-4273-8181-b15bb00b2203"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="77f460f9-4bb2-471b-9839-27b30a1560b9"
+                  name="Видалити станції"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2e8660a3-9507-4540-b966-99f5a31d0437"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="Створити потяги"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fb7bd2c0-5aed-4902-9a66-c3edc0ed1323"
+              LastKnownName="Створити потяги"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5b628ae8-9fb6-4499-9f81-ac287bed591d"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d9a10eca-26f4-4103-9790-3d83514280d8"
+                  name="Створити потяги"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c842c8c1-2368-450f-9da7-1da25c6e6336"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="Видалити потяги"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0ad6e480-2abf-4092-8315-e8af2a9b6423"
+              LastKnownName="Видалити потяги"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="11aa27ec-db93-4542-b900-7091be2e4e4e"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9e73504f-9ffd-4f51-93ff-385920d9cfe8"
+                  name="Видалити потяги"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="22ee061f-b685-4356-9e88-e2a895b8b6be"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="Встановити час відбуття потягу"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a3816c8a-80b4-4d60-8b3c-0281566e99be"
+              LastKnownName="Встановити час відбуття потягу"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="31cf5bcd-7150-4830-a7fc-ffbd28072db5"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fbbd6a69-cf61-432c-a56b-bc278f4ec9dc"
+                  name="Встановити час відбуття потягу"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="20662ada-f904-496e-977b-5ea90aeaea37"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="Встановити  кількість етапів для потяга"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="abf11959-6daa-4db7-8a47-95c610595ef3"
+              LastKnownName="Встановити  кількість етапів для потяга"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="39237f52-570e-4215-9ef0-0ab5395bd369"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="074ff23a-3896-47ac-bedf-99e69db88394"
+                  name="Встановити  кількість етапів для потяга"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4d750c60-7a2d-4019-ad86-862f739101bb"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="Спостерігати за табло на станції"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fb4ab1c6-3f32-4c56-a1f4-7dc96bc2b3a6"
+              LastKnownName="Викликати табло станції"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="328b5cb5-e542-42c7-a6ba-4515407b0614"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd9e9f3b-f20f-43d1-9cc6-285196f5b7a6"
+                  name="Спостерігати за табло на станції"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="78120f44-cbe5-4d88-9aac-ce14e4f9cbd2"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="Встановити рекламу на табло"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="73f6226b-0d3a-4fb6-bdf7-0226074683d2"
+              LastKnownName="Встановити рекламу на табло"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="793837de-d88a-4611-99e9-c6a9fa930b3f"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aa56173f-c3c5-41d0-8abe-221313b596ed"
+                  name="Встановити рекламу на табло"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f9cce3a0-4386-4af8-9bbd-2b928a5f183c"
+            isDerived="false"
+            sourceEndRoleName="Actor"
+            targetEndRoleName="Подивитися порушення графіку"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="361ad33c-2937-4bdf-a15d-661044577186"
+              LastKnownName="Подивитися порушення графіку"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0006247e-996d-4a8b-9a91-b3bc3de5366a"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6f896e5d-38b8-4b50-8100-a89b4ecd0e43"
+                  name="Подивитися порушення графіку"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="80c579ac-dafa-4f79-b079-064d19ab9ccb"
+        name="Створити лінії метро"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3ed0a2ee-7750-4d65-a54d-6d6d50ea09aa"
+        name="Видалити лінії метро"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="527e342c-c413-43c7-87f1-eaefe8187871"
+        name="Створити станції"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1f5ab915-60bf-4ed3-acba-52482fe82018"
+        name="Видалити станції"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fb7bd2c0-5aed-4902-9a66-c3edc0ed1323"
+        name="Створити потяги"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0ad6e480-2abf-4092-8315-e8af2a9b6423"
+        name="Видалити потяги"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d289a3b8-58b1-415e-8a37-313cd9ba3eb0"
+        name="Задати час"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a3816c8a-80b4-4d60-8b3c-0281566e99be"
+        name="Встановити час відбуття потягу"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="abf11959-6daa-4db7-8a47-95c610595ef3"
+        name="Встановити  кількість етапів для потяга"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fb4ab1c6-3f32-4c56-a1f4-7dc96bc2b3a6"
+        name="Викликати табло станції"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="73f6226b-0d3a-4fb6-bdf7-0226074683d2"
+        name="Встановити рекламу на табло"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="361ad33c-2937-4bdf-a15d-661044577186"
+        name="Подивитися порушення графіку"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3799234e-d658-4d01-8aa9-d5493bddcdc0"
+        name="Розташувати лінії метро на карті"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
